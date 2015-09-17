@@ -1,0 +1,44 @@
+@import 'bootstrap_components';
+
+img {
+  @include img-fluid();
+}
+.navbar {
+  border-radius: 0;
+}
+
+.site-content {
+  @extend .container;
+}
+
+.content {
+  margin-top: 4em;
+}
+
+.profile-preview {
+  .profile-thumbnail {
+    @extend .img-circle, .center-block;
+    max-width: 8em;
+  }
+
+  .card-block {
+    margin-top: -5em;
+  }
+}
+
+.card-follow {
+  @extend .text-center;
+
+  img {
+    @extend .center-block;
+    max-width: 8em;
+  }
+}
+
+.profile-hero {
+  @extend .jumbotron, .jumbotron-fluid;
+  background-image: url("http://res.cloudinary.com/wildworld/image/asset/v1438899310/website/cover_01_1680x1050.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 30em;
+}
