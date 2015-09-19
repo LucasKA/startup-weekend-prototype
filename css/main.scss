@@ -8,11 +8,11 @@ body {
   font-weight: 300;
 }
 
-
 img {
   width: 100%;
   @include img-fluid();
 }
+
 .navbar {
   border-radius: 0;
 }
@@ -69,6 +69,20 @@ img {
 
   .card-block {
     padding-bottom: 0;
+  }
+}
+
+.comment-form {
+  textarea {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+  }
+  .btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 1em;
+    margin-top: -1em;
   }
 }
 

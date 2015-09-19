@@ -4925,6 +4925,16 @@ img {
 .card-discussion .card-block {
   padding-bottom: 0; }
 
+.comment-form textarea {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0; }
+.comment-form .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 1em;
+  margin-top: -1em; }
+
 .profile-hero {
   background-image: url("http://res.cloudinary.com/wildworld/image/asset/v1438899310/website/cover_01_1680x1050.jpg");
   background-size: cover;
