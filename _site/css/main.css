@@ -524,7 +524,7 @@ mark,
 .img-rounded {
   border-radius: 0.3rem; }
 
-.img-thumbnail {
+.img-thumbnail, .card-follow .card-block img {
   padding: 0.25rem;
   line-height: 1.5;
   background-color: #fff;
@@ -536,7 +536,7 @@ mark,
   max-width: 100%;
   height: auto; }
 
-.img-circle, .profile-preview .profile-thumbnail {
+.img-circle, .profile-preview .profile-thumbnail, .card-follow .card-block img {
   border-radius: 50%; }
 
 code,
@@ -3706,7 +3706,7 @@ a.label:focus {
 
 .media-object {
   display: block; }
-  .media-object.img-thumbnail {
+  .media-object.img-thumbnail, .card-follow .card-block img.media-object {
     max-width: none; }
 
 .media-right {
@@ -4462,7 +4462,7 @@ button.close {
   display: table;
   clear: both; }
 
-.center-block, .profile-preview .profile-thumbnail, .card-follow img {
+.center-block, .profile-preview .profile-thumbnail, .card-follow .card-block img {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -4975,10 +4975,13 @@ img {
 .profile-preview .profile-thumbnail {
   max-width: 8em; }
 .profile-preview .card-block {
-  margin-top: -5em; }
+  margin-top: -5.5em; }
 
-.card-follow img {
-  max-width: 8em; }
+.card-follow .card-block {
+  margin-top: -4.5em;
+  margin-bottom: -1em; }
+  .card-follow .card-block img {
+    max-width: 6em; }
 
 .card-discussion h4 {
   margin-bottom: 0; }

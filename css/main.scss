@@ -37,16 +37,21 @@ img {
   }
 
   .card-block {
-    margin-top: -5em;
+    margin-top: -5.5em;
   }
 }
 
 .card-follow {
   @extend .text-center;
 
-  img {
-    @extend .center-block;
-    max-width: 8em;
+  .card-block {
+    margin-top: -4.5em;
+    margin-bottom: -1em;
+
+    img {
+      @extend .img-circle, .img-thumbnail, .center-block;
+      max-width: 6em;
+    }
   }
 }
 
