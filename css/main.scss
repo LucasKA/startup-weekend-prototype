@@ -8,9 +8,7 @@ body {
   font-weight: 300;
 }
 
-p {
-  font-weight: normal;
-}
+
 img {
   width: 100%;
   @include img-fluid();
