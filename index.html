@@ -6,195 +6,26 @@ layout: default
 
     <div class="row alerts-container">
       <div class="col-xs-12">
-        <div class="alert alert-dismissable alert-success" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><i class="fa fa-close"></i></span>
-            <span class="sr-only">Close</span>
-          </button>
-          <p>This container will have all the alerts if the user needs to be alerted about something</p>
-        </div>
+        {% include alert.html %}
       </div>
     </div>
 
     <div class="row">
-
       <div class="col-md-3 hidden-md-down">
-        <article class="card profile-preview">
-          <img class="card-img-top" data-src="http://res.cloudinary.com/wildworld/image/asset/v1438899310/website/cover_01_1680x1050.jpg" src="http://res.cloudinary.com/wildworld/image/asset/v1438899310/website/cover_01_1680x1050.jpg" alt="Profile Background" />
-          <div class="card-block">
-            <img src="http://res.cloudinary.com/wildworld/image/upload/v1442547270/ze4fm3malsgtyslgamk0.jpg" alt="Profile Avatar Thumbnail" class="img-thumbnail profile-thumbnail" alt="">
-
-            <div class="text-center">
-              <h5 class="card-text">
-                  <a href="" class="card-link">@BillMcGee</a>
-                </h5>
-              <hr>
-              <span class="label label-pill label-primary"><i class="fa fa-thumbs-up"></i>  1140</span>
-              <span class="label label-pill label-primary"><i class="fa fa-users"></i> 233</span>
-              <span class="label label-pill label-primary"><i class="fa fa-cloud-upload"></i> 75</span>
-            </div>
-          </div>
-          <div class="card-footer text-center"><a href="" class="btn btn-sm btn-secondary">Achievements <i class="fa fa-refresh"></i></a></div>
-        </article>
-
-        <article class="card">
-          <div class="card-block">
-            <a href="#" class="card-link">About</a>
-            <a href="#" class="card-link">Terms</a>
-            <a href="#" class="card-link">Privacy</a>
-            <p class="card-text small"><i class="fa fa-copyright"></i> 2015, Wildworld</p>
-          </div>
-        </article>
-
+        {% include mini-profile.html %} {% include about.html %}
       </div>
 
       <div class="col-md-7">
-        <div class="card ugc-creator">
-          <div class="card-header">
-            <p class="card-text text-center text-primary"><i class="fa fa-lg fa-camera-retro"></i> Upload your pictures and tell your story!</p>
-          </div>
-          <div class="card-block">
-            <div class="row">
-              <div class="col-md-6">
-                <a hrer="#" class="btn btn-lg btn-primary-outline btn-block"><i class="fa fa-cloud-upload"></i> Upload</a>
-              </div>
-              <div class="col-md-6">
-                <a hrer="#" class="btn btn-lg btn-primary-outline btn-block"><i class="fa fa-search"></i> Search The Web</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <article class="card product-card">
-          <img class="card-img-top" data-src="http://res.cloudinary.com/wildworld/image/upload/v1442585746/btbzeknmd9k8qigcjdwb.jpg" src="http://res.cloudinary.com/wildworld/image/upload/v1442585746/btbzeknmd9k8qigcjdwb.jpg" alt="Product Title" />
-          <div class="card-block">
-            <h4 class="card-title"><a href="/detail-view.html">Product Card</a> <span class="label label-pill label-primary"><i class="fa fa-thumbs-up"></i> 225</span></h4>
-            <hr>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatem sint, animi nisi accusantium voluptatibus earum sunt consequuntur tempore facere inventore ex ullam qui corporis assumenda ut. Molestiae, suscipit alias!
-              <div class="collapse" id="collapseExample">
-                <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur `adipisicing` elit. Doloribus odit dolor aliquam voluptatibus impedit libero labore reiciendis porro voluptates saepe, officiis, sunt unde distinctio explicabo consectetur maiores ad ipsam esse!
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque ea tempora nemo rem aspernatur illum expedita quis atque aliquid sunt distinctio iure dolorem fugit optio maxime, pariatur, earum sequi!</p>
-              </div>
-              <a class="small" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Full Description
-              </a>
-            </p>
-            <p class="card-text"><small class="text-muted">Posted 3 mins ago </small></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="pull-left btn btn-success-outline"><i class="fa fa-shopping-cart"></i> Buy!</a>
-            <a href="#" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Like</a>
-          </div>
-        </article>
-
-        <article class="card card-social-post">
-          <img class="card-img-top" data-src="http://res.cloudinary.com/wildworld/image/upload/v1442511225/pznqbs0zlhzzyxwy0kfe.jpg" src="http://res.cloudinary.com/wildworld/image/upload/v1442511225/pznqbs0zlhzzyxwy0kfe.jpg" alt="Card image cap" />
-          <div class="card-block">
-            <h4 class="card-title text-left">
-                <a href="/detail-view.html">Social Post Card Single</a>
-
-                <span class="label label-pill label-primary pull-right"><i class="fa fa-thumbs-up"></i> 25</span></h4>
-            <hr>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas voluptatem sint, animi nisi accusantium voluptatibus earum sunt consequuntur tempore facere inventore ex ullam qui corporis assumenda ut. Molestiae, suscipit alias!
-            </p>
-            <p class="card-text"><small class="text-muted">Posted 3 mins ago in Camping Contest </small></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-info pull-left"><i class="fa fa-trophy"></i> 25<sup>th</sup></a>
-            <a href="#" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Like</a>
-          </div>
-        </article>
-
-        <article class="card card-discussion">
-          <div class="card-header text-left">
-            <h4>
-                <a href="/detail-view.html">Discussion Card</a>
-                <div class="pull-right">
-                  <span class="label label-pill label-primary"><i class="fa fa-thumbs-up"></i> 1,176</span>
-                  <span class="label label-pill label-info"><i class="fa fa-comments-o"></i> 15</span>
-                </div>
-              </h4>
-          </div>
-          <div class="card-block row">
-            <div class="col-md-12 original-post">
-              <img class="img-rounded" src="http://res.cloudinary.com/wildworld/image/upload/v1442453604/upk2mi70yc3maw2kqebq.jpg" alt="Discussion Image" />
-              <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt...</p>
-            </div>
-            <div class="col-md-12">
-
-              <article class="card card-block">
-                <div class="media card-text">
-                  <a href="profile.html" class="media-left">
-                    <img class="media-object img-circle" src="http://res.cloudinary.com/wildworld/image/upload/v1442547270/ze4fm3malsgtyslgamk0.jpg" alt="avatar" />
-                  </a>
-                  <div class="media-body small">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam architecto recusandae excepturi asperiores earum, amet nemo tempora minima ducimus. Nam nemo, explicabo recusandae quas aperiam blanditiis ut consectetur, minima accusamus!</p>
-                    <p><em>By <a href="profile.html">Username</a>, 3 min ago</em></p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="card card-block">
-                <div class="media card-text">
-                  <a href="profile.html" class="media-left">
-                    <img class="media-object img-circle" src="http://res.cloudinary.com/wildworld/image/upload/v1442547270/ze4fm3malsgtyslgamk0.jpg" alt="avatar" />
-                  </a>
-                  <div class="media-body small">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eveniet, quibusdam. Minus culpa adipisci non nulla quasi, sit quam deleniti voluptates, modi consequatur rerum, mollitia omnis. Vitae quasi, voluptas aperiam.</p>
-                    <p><em>By  <a href="profile.html">Username</a>, 3 min ago</em></p>
-                  </div>
-                </div>
-              </article>
-
-              <form class="comment-form">
-                <fieldset class="form-group">
-                  <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Tell the community what you think"></textarea>
-                </fieldset>
-                <button type="submit" class="btn btn-info btn-block"><i class="fa fa-lg fa-comments-o"></i> Comment</button>
-              </form>
-            </div>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-primary"><i class="fa fa-thumbs-up"></i> Like</a>
-          </div>
-        </article>
-
+        {% include creation-widget.html %} {% include card-product.html %} {% include card-social-post.html %} {% include card-discussion.html %}
       </div>
 
-      <div class="hidden-md-down col-lg-2">
+      <div class="col-lg-2 hidden-md-down">
         <h6 class="text-center">
-            <i class="fa fa-users"></i> Suggested people to follow!
-          </h6>
-        <hr>
-
-        <article class="card card-follow">
-          <img class="card-img-top" src="http://res.cloudinary.com/wildworld/image/upload/v1442585746/btbzeknmd9k8qigcjdwb.jpg" alt="Product Title" />
-          <div class="card-block">
-            <a href="#">
-              <img src="http://res.cloudinary.com/wildworld/image/upload/v1442547270/ze4fm3malsgtyslgamk0.jpg" />
-            </a>
-            <h6><strong>@BillMcGee</strong></h6>
-          </div>
-          <div class="card-footer small text-center">
-            <a href="#" class="btn btn-sm btn-primary-outline">
-              <i class="fa fa-user-plus"></i> Follow
-            </a>
-          </div>
-        </article>
-
-
+          <i class="fa fa-users"></i> Suggested people to follow!
+        </h6>
+        <hr> {% include card-follow.html %}
       </div>
-
     </div>
+
   </div>
-
 </div>
-<!-- jQuery first, then Bootstrap JS. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-</body>
-
-</html>
