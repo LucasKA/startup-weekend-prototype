@@ -92,6 +92,10 @@ img {
   background-size: cover;
   background-position: center center;
   min-height: 30em;
+  @include media-breakpoint-down(md) {
+    background-size:cover;
+    min-height: 15em;
+  }
 }
 
 .profile-header {
