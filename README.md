@@ -1,5 +1,10 @@
-# Prototypes for Front End Components and Layouts
+## Front End Prototypes
 
-### Preview is available at http://ubrien.github.io/frontend-prototypes
+- Prototype layouts and elements for WildWorld
 
-### Kitchen Sink Styleguide Preview (Coming Soon)
+#### Preview is available at http://ubrien.github.io/frontend-prototypes
+
+
+TODO:
+
+- Add Kitchen Sink UI Kit Style Guide
