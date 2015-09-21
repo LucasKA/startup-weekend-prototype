@@ -15,6 +15,9 @@ img {
 
 .navbar {
   border-radius: 0;
+  .navbar-brand {
+    max-width: 7em;
+  }
 }
 
 .bg-faded {
