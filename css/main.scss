@@ -20,10 +20,6 @@ img {
   }
 }
 
-.bg-faded {
-  background-color: darken($gray-lighter, 5%);
-}
-
 .site-content {
   @include make-container();
 
