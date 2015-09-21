@@ -17,6 +17,10 @@ img {
   border-radius: 0;
 }
 
+.bg-faded {
+  background-color: darken($gray-lighter, 5%);
+}
+
 .site-content {
   @include make-container();
 
