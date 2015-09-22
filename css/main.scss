@@ -107,6 +107,33 @@ img {
   border-radius: 0.25em;
   padding: 0.5em;
 }
+
+.card-collection {
+  .card-title {
+    margin-bottom: 0;
+  }
+
+  .card-collection-item {
+    box-shadow: none;
+
+    .label {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+    }
+
+    .card-block {
+      margin-top: -5em;
+    }
+
+    .card-footer {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .profile-preview {
   .profile-thumbnail {
     @extend .img-circle, .center-block;
