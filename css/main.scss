@@ -41,6 +41,22 @@ img {
   box-shadow: 0px 4px 8px -2px rgba($gray-light, 0.5);
 }
 
+.card-achievement {
+  p.card-title {
+    margin-bottom: 0;
+  }
+
+  .achievement-percentage {
+    p, h5 {
+      margin-bottom: 0;
+    }
+
+    .percentage-text {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .card-follow {
   @extend .text-center;
 
