@@ -1,6 +1,17 @@
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
+$facebook:                  #3b5998;
+$twitter:                   #55acee;
+$google-plus:               #dc4e41;
+
+
+$red:                       #c33;
+$green:                     #29a329;
+$blue:                      #217c7c;
+$orange:                    #cc7833;
+$dark-red:                  darken($red, 20%);
+$white:                     #fff;
 
 $gray-dark:                 #373a3c;
 $gray:                      #55595c;
@@ -8,11 +19,12 @@ $gray-light:                #818a91;
 $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
-$brand-primary:             #CC3333;
-$brand-success:             #29A329;
-$brand-info:                #217c7c;
-$brand-warning:             #CC7833;
-$brand-danger:              #800101;
+$brand-primary:             $red;
+$brand-success:             $green;
+$brand-info:                $blue;
+
+$brand-warning:             $orange;
+$brand-danger:              $dark-red;
 
 
 // Options
@@ -22,7 +34,7 @@ $brand-danger:              #800101;
 $enable-flex:               false;
 $enable-rounded:            true;
 $enable-shadows:            false;
-$enable-gradients:          true;
+$enable-gradients:          false;
 $enable-transitions:        true;
 $enable-hover-media-query:  true;
 $enable-grid-classes:       true;
@@ -49,7 +61,7 @@ $state-info-bg:                  lighten($brand-info, 40%) !default;
 $state-info-border:              darken($state-info-bg, 20%) !default;
 
 $state-warning-text:             $brand-warning !default;
-$state-warning-bg:               lighten($brand-warning, 40%) !default;
+$state-warning-bg:               lighten($brand-warning, 30%) !default;
 $state-warning-border:           darken($state-warning-bg, 20%) !default;
 
 $state-danger-text:              $brand-danger !default;
