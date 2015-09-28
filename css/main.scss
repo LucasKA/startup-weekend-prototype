@@ -117,7 +117,7 @@ img {
     box-shadow: none;
 
     .card-footer {
-      background-color: #fff;
+      background-color: $white;
 
       p {
         margin-bottom: 0;
@@ -154,5 +154,27 @@ img {
   margin-top: -9em;
   img {
     max-width: 12em;
+  }
+}
+
+.share-button-group {
+  .facebook {
+    @extend .btn;
+    @include button-variant($white, $facebook, darken($facebook, 10%));
+  }
+
+  .twitter {
+    @extend .btn;
+    @include button-variant($white, $twitter, darken($twitter, 10%));
+  }
+
+  .google-plus {
+    @extend .btn;
+    @include button-variant($white, $google-plus, darken($google-plus, 10%));
+  }
+
+  .email {
+    @extend .btn, .btn-secondary;
+    @include button-variant($white, $gray, darken($gray, 10%))
   }
 }
