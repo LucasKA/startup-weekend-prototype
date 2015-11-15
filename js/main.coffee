@@ -11,7 +11,6 @@ $(document).ready ->
 
   $('.curate-button').click(->
     $(@).removeClass('btn-secondary-outline').addClass('btn-danger')
-    $(@).html( '<i class="fa fa-heart"></i> Curated' )
     $('#curated').modal()
   )
 
