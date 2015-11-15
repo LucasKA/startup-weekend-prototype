@@ -23,6 +23,6 @@ $(document).ready ->
 
   $('#passport').modal()
 
-  $('.spinner').click(->
-    alert 'what'
+  $('#passport').on('hidden.bs.modal', ->
+    $('#rsvp').modal()
   )
